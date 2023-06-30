@@ -51,4 +51,13 @@
         <p>Bienvenue chez Zen-Host, votre solution complète pour la gestion de vos propriétés sur les plateformes de location de courte durée telles qu'Airbnb, OfficeRiders et Abritel.</p>
         <p>Nous sommes une équipe dévouée de professionnels de la conciergerie qui se consacrent à gérer efficacement et avec soin les propriétés de nos clients particuliers.</p>
         
-        <button class="button" data-tally-open="w4BOEr" data-tally-emoji-text="👋" data-tally-emoji-animation="wave">Demande de devis</button>
+        <button class="button" onclick="openTallyPopup()">Demande de devis</button>
+
+        <script>
+            function openTallyPopup() {
+                var popupWindow = window.open("https://tally.so#tally-open=w4BOEr&tally-emoji-text=👋&tally-emoji-animation=wave", "TallyPopup", "width=600,height=600");
+            }
+        </script>
+    </div>
+</body>
+</html>
