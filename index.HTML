@@ -42,7 +42,7 @@
             height: 2cm;
         }
     </style>
-    <script async src="https://tally.so/widgets/embed.js"></script>
+    <script async src="https://embed.tally.so/embed.js"></script>
 </head>
 <body>
     <div class="container">
@@ -55,12 +55,7 @@
 
         <script>
             function openTallyPopup() {
-                Tally({
-                    popupURL: "https://tally.so",
-                    tallyId: "w4BOEr",
-                    emoji: "👋",
-                    emojiAnimation: "wave"
-                }).open();
+                Tally.createPopup("w4BOEr");
             }
         </script>
     </div>
