@@ -2,7 +2,6 @@
 <html>
 <head>
     <title>Zen-Host</title>
-    <script async src="https://tally.so/widgets/embed.js"></script>
     <style>
         body {
             background-color: #40E0D0;
@@ -43,6 +42,7 @@
             height: 2cm;
         }
     </style>
+    <script async src="https://tally.so/widgets/embed.js"></script>
 </head>
 <body>
     <div class="container">
@@ -55,7 +55,12 @@
 
         <script>
             function openTallyPopup() {
-                var popupWindow = window.open("https://tally.so#tally-open=w4BOEr&tally-emoji-text=👋&tally-emoji-animation=wave", "TallyPopup", "width=600,height=600");
+                Tally({
+                    popupURL: "https://tally.so",
+                    tallyId: "w4BOEr",
+                    emoji: "👋",
+                    emojiAnimation: "wave"
+                }).open();
             }
         </script>
     </div>
